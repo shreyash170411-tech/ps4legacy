@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PlayStation 4 — One of the Greatest Consoles Ever Made</title>
+<meta name="description" content="An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-symbols">
+      <span class="sym sym-triangle">△</span>
+      <span class="sym sym-circle">◯</span>
+      <span class="sym sym-cross">✕</span>
+      <span class="sym sym-square">◻</span>
+    </div>
+    <p class="loader-text">Loading PlayStation 4…</p>
+  </div>
+
+  <!-- Scroll progress -->
+  <div id="progress" class="progress"></div>
+
+  <!-- Floating particles background -->
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand">
+      <span class="brand-logo">PS</span>
+      <span class="brand-text">PlayStation<sup>®</sup>4</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#models">Models</a>
+      <a href="#games">Top Games</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#facts">Fun Facts</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button id="soundToggle" class="icon-btn" title="Toggle sound effects" aria-pressed="false">🔇</button>
+      <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+      <button id="menuToggle" class="icon-btn menu-toggle" title="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Floating symbols -->
+  <div class="floating-symbols" aria-hidden="true">
+    <span>△</span><span>◯</span><span>✕</span><span>◻</span>
+    <span>△</span><span>◯</span><span>✕</span><span>◻</span>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="hero reveal">
+    <div class="hero-inner">
+      <p class="eyebrow">Sony Interactive Entertainment • Est. 2013</p>
+      <h1 class="hero-title">PlayStation 4</h1>
+      <p class="hero-sub">One of the Greatest Gaming Consoles Ever Made</p>
+      <button class="btn btn-primary" data-scroll="#about">Explore ▾</button>
+      <div class="console" aria-hidden="true">
+        <div class="console-body">
+          <div class="console-slit"></div>
+          <div class="console-light"></div>
+        </div>
+        <div class="console-shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2 class="section-title">About the PS4</h2>
+    <div class="grid two">
+      <div class="glass card-pad">
+        <p>The <strong>PlayStation 4</strong> is an eighth-generation home video game console released by <strong>Sony Interactive Entertainment</strong> on <strong>November 15, 2013</strong>. It succeeded the PlayStation 3 and competed with the Xbox One and Nintendo Switch.</p>
+        <p>Its blend of powerful hardware, an unmatched exclusive library, and a friendly developer platform made it a defining console of its era — and one of the best-selling consoles of all time.</p>
+      </div>
+      <div class="stats">
+        <div class="stat glass"><span class="num" data-target="117">0</span><span class="label">Million Units Sold</span></div>
+        <div class="stat glass"><span class="num" data-target="3400">0</span><span class="label">Games Available</span></div>
+        <div class="stat glass"><span class="num" data-target="11">0</span><span class="label">Years On Market</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section reveal">
+    <h2 class="section-title">Features</h2>
+    <div class="grid three feature-grid">
+      <div class="glass feature"><div class="ic">🎮</div><h3>Powerful Graphics</h3><p>1.84 TFLOPS GPU delivering rich 1080p worlds, and 4K checkerboard on the PS4 Pro.</p></div>
+      <div class="glass feature"><div class="ic">🌐</div><h3>Online Multiplayer</h3><p>PlayStation Network connects millions of players worldwide in real time.</p></div>
+      <div class="glass feature"><div class="ic">🛒</div><h3>PlayStation Store</h3><p>Digital storefront with thousands of games, add-ons and media.</p></div>
+      <div class="glass feature"><div class="ic">🤝</div><h3>Share Play</h3><p>Invite a friend to virtually pass the controller — even if they don't own the game.</p></div>
+      <div class="glass feature"><div class="ic">📱</div><h3>Remote Play</h3><p>Stream your PS4 to phones, tablets, PCs and Macs anywhere.</p></div>
+      <div class="glass feature"><div class="ic">🥽</div><h3>PlayStation VR</h3><p>Full virtual reality support with hundreds of immersive titles.</p></div>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section id="models" class="section reveal">
+    <h2 class="section-title">Compare the Models</h2>
+    <div class="table-wrap glass">
+      <table class="compare">
+        <thead>
+          <tr><th></th><th>🕹️ Original PS4</th><th>📦 PS4 Slim</th><th>🚀 PS4 Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Release</th><td>2013</td><td>2016</td><td>2016</td></tr>
+          <tr><th>GPU Power</th><td>1.84 TFLOPS</td><td>1.84 TFLOPS</td><td>4.20 TFLOPS</td></tr>
+          <tr><th>Resolution</th><td>1080p</td><td>1080p</td><td>4K (checkerboard)</td></tr>
+          <tr><th>Storage</th><td>500 GB / 1 TB</td><td>500 GB / 1 TB</td><td>1 TB / 2 TB</td></tr>
+          <tr><th>Size</th><td>Large</td><td>Smallest</td><td>Tallest</td></tr>
+          <tr><th>HDR</th><td>✅</td><td>✅</td><td>✅</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TOP GAMES -->
+  <section id="games" class="section reveal">
+    <h2 class="section-title">Top Games</h2>
+    <div class="grid four game-grid" id="gameGrid"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section reveal">
+    <h2 class="section-title">Gallery</h2>
+    <div class="grid four gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="section reveal">
+    <h2 class="section-title">Timeline</h2>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section reveal">
+    <h2 class="section-title">PS4 Quiz</h2>
+    <div class="glass quiz" id="quiz">
+      <div id="quizBody"></div>
+      <div class="quiz-footer">
+        <span id="quizProgress"></span>
+        <button id="quizRestart" class="btn btn-ghost" hidden>Restart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUN FACTS -->
+  <section id="facts" class="section reveal">
+    <h2 class="section-title">Fun Facts</h2>
+    <div class="glass fact">
+      <p id="factText">Click the button to reveal a fun PS4 fact!</p>
+      <button id="factBtn" class="btn btn-primary">Show Random Fact</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">Contact</h2>
+    <form class="glass contact" id="contactForm">
+      <label>Name<input type="text" required /></label>
+      <label>Email<input type="email" required /></label>
+      <label>Message<textarea rows="4" required></textarea></label>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="contactMsg" class="contact-msg"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+      <p class="copy">© <span id="year"></span> PS4 Tribute · Fan-made educational project. Not affiliated with Sony.</p>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" title="Back to top" aria-label="Back to top">▲</button>
+
+  <!-- Game / Gallery Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-inner glass">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
