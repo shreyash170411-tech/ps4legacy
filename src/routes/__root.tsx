@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "PlayStation 4 — One of the Greatest Consoles Ever Made" },
+      { name: "description", content: "An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "PlayStation 4 — One of the Greatest Consoles Ever Made" },
+      { property: "og:description", content: "An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "PlayStation 4 — One of the Greatest Consoles Ever Made" },
+      { name: "twitter:description", content: "An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fc12bc9a-f0a5-4194-be94-f2b2a21ca264/id-preview-97f1df75--c4616b75-4696-405a-8a48-81fa0b6cd160.lovable.app-1783685999208.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fc12bc9a-f0a5-4194-be94-f2b2a21ca264/id-preview-97f1df75--c4616b75-4696-405a-8a48-81fa0b6cd160.lovable.app-1783685999208.png" },
     ],
     links: [
       {

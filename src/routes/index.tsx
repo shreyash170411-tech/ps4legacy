@@ -6,8 +6,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "PlayStation 4 — One of the Greatest Consoles Ever Made" },
       { name: "description", content: "An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." },
-      { property: "og:title", content: "PlayStation 4 Tribute" },
-      { property: "og:description", content: "Explore the PS4: features, models, games, timeline & quiz." },
+      { property: "og:title", content: "PlayStation 4 — One of the Greatest Consoles Ever Made" },
+      { property: "og:description", content: "An interactive tribute to the PlayStation 4: features, models, top games, timeline, quiz and fun facts." },
     ],
   }),
   component: Index,
